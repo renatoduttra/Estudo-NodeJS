@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+            body {
+                background: rgb(116, 204, 255);
+                color: #fff;
+                font: normal 18pt Arial;
+            }
+    </style>
+</head>
+<body>
+    <h1>Estudos DOM</h1>
+    <p>Resultado</p>
+    <p id="msg"><Strong> DOM</Strong> JavaScript </p>
+    <div class="msg"> Renato </div>
+    <Script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementById('msg')
+        window.document.write(p1.innerText)
+        //corpo.style.background = "black"
+        document.write(p2.innerHTML)
+        var d = window.document.querySelector('.msg')
+        window.document.write(d.innerText)
+    </Script>
+</body>
+</html>
